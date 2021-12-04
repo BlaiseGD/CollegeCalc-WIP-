@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		  <meta charset="UTF-8">
+		    <title>College Calc</title>
+			<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h1>University Calculator</h1>
+		<form>
+			<fieldset>
+				<legend>Add Info</legend>
+				<label for="collegeName">College </label>
+				<input type="text" name="collegeName" id = "collegeName" placeholder="Type a college">
+				<hr/>
+				<label for="costPerApp">App-Cost </label>
+				<input type="number" name="costPerApp" id ="costPerApp" placeholder="$75">
+				<hr/>
+				<label for="tuition">Tuition </label>
+				<input type="number" name="tuition" id="tuition" placeholder="$20,000">
+				<hr/>
+				<label for="essays">Essay Amt </label>
+				<input type="number" name="essays" id="essays" placeholder="3">
+				<hr/>
+				<button id="addBtn">Add</button>
+			</fieldset>
+		</form>
+		<br/>
+		<table id="tableContent">
+			<thead>
+				<tr>
+					<th>Name&nbsp;&nbsp;</th>
+					<th>App-Cost&nbsp;&nbsp;</th>
+					<th>Tuition&nbsp;&nbsp;</th>
+					<th>Essays</th>
+				</tr>
+			</thead>
+			<tbody id="storeBody">
+			</tbody>
+		</table>
+		<h1 id="totalApp">Total App Cost: </h1>
+		<h1 id="totalEssay">Total Essays: </h1>
+		<button id="removeSaved">Remove All Saved Colleges</button>
+		<script src="script.js"></script>
+	</body>
+</html>
